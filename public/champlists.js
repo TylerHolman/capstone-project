@@ -43,7 +43,7 @@ const createNewChar = (evt) => {
   
 
   let body = {
-    champName: newChampInput.value,
+    champName: `Draven`,
   }
 
   axios.post(`${baseURL}/api/champlist`, body)
@@ -51,6 +51,7 @@ const createNewChar = (evt) => {
       for(let i = 0; i < res.data.length; i++){
         createCharacterCard(res.data[i])
       }
+      // getAllCharacters()
     })
     .catch(error => console.log(error))
 
@@ -68,7 +69,7 @@ createForm.addEventListener('submit', createNewChar)
 
 
 createNewChar()
-
+clearCharacters()
 getAllCharacters()
 
 

@@ -4,20 +4,29 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(248, 114, 114);
     overflow: hidden;
 }
 label{
-    color: #ff0000;
+    color: #000000;
     padding-top: 500px;
     padding-left: 350px;
 }
 h1{
     text-align: center;
-    color: rgb(172, 7, 7);
+    color: rgb(0, 0, 0);
+    z-index: 1;
+}
+#c1{
+   margin-left: 5%;
+
+}
+#c2{
+    margin-top: 50%;
+    font-size: xx-large;
 }
 #Elo{
-    color: red;
+    color: rgb(0, 0, 0);
 }
 .mainpan{
     width: 100%;
@@ -35,8 +44,40 @@ h1{
     width: 100%;
 
 }
+.video-wrapper {
+    /* Telling our absolute positioned video to 
+    be relative to this element */
+    position: relative;
+  
+    width:100%;
+    height: 100vh;
+  
+    /* Will not allow the video to overflow the 
+    container */
+    overflow: hidden;
+  
+    /* Centering the container's content vertically 
+    and horizontally */
+    text-align: center;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+  }
+video{
+   
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      
+        position: absolute;
+        top: 0;
+        left: 0;
+      
+}
 a{
-    color: rgb(172, 7, 7);
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    text-decoration: none;
 }
 .Ad{
     
@@ -54,25 +95,34 @@ a{
     padding-top: 7%;
 }
 #btn1{
-    color: red;
+    color: rgb(0, 0, 0);
 }
 button{
-    color: #ff0000;
+    color: rgb(0, 0, 0);
     padding: 8px 10px;
     background: transparent;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid rgbrgb(172, 7, 7);
     border-radius: 20px;
     cursor: pointer;
     outline: none;
 }
 #btn2{
-    color: #ff0000;
+    color: rgb(0, 0, 0);
     margin-left: 10px;
 }
 .button2{
     text-align: right;
     padding-right: 50px;
     
+}
+#btn4{
+    margin-left: 50px;
+}
+h2{
+    color: rgb(0, 0, 0);
+}
+h3{
+    color:rgb(0, 0, 0);
 }
 select{
     padding: 8px 10px;
@@ -111,7 +161,8 @@ option{
 .axes{
     position: relative;
     animation: axes 2s infinite linear;
-    padding-left: 100px;
+   
+   
 }
 
 @keyframes draven{

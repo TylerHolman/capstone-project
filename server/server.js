@@ -12,21 +12,26 @@ app.use(cors());
 let id = 2
 let characters = [
     {
-    champName: 'DRAVEN',
+    champName: 'Draven',
     id: 1
+    }
+]
+let draven = [
+    {
+        champName:`Draven`
     }
 ]
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '../public')))
 app.get('/api/champlist', (req, res) => {
     console.log('hit chars')
-    res.status(200).send(characters)
+    res.status(200).send(draven)
 })
-app.get('/character/:name', (req, res) => {
-    const { name } = req.params
-    const index = characters.findIndex(char => char.champName.toLowerCase() === name)
-    res.status(200).send(characters[index])
-})
+// app.get('/character/:name', (req, res) => {
+//     const { name } = req.params
+//     const index = characters.findIndex(char => char.champName.toLowerCase() === name)
+//     res.status(200).send(characters[index])
+// })
 app.post('/api/champlist', (req, res) => {
     let newChar = {...req.body, id}
     characters.unshift(newChar)
