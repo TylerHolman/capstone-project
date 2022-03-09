@@ -1,17 +1,14 @@
-h1{
-    text-align: center;
-    
-   
-    position: relative;
-}
+
 h2 {
     margin-top: 2%;
     margin-left: 5%;
     position: relative;
 }
+
 a {
     font-size: xx-large;
         margin-left: 1%;
+        margin-top: 2%;
         position: relative;
 }
 form{
