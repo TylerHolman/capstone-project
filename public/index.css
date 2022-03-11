@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(248, 114, 114);
+    background-color: rgb(255, 255, 255);
     overflow: hidden;
 }
 label{
@@ -18,7 +18,7 @@ h1{
     z-index: 1;
 }
 #c1{
-   margin-left: 5%;
+   margin-left: 0%;
 
 }
 #c2{
@@ -160,7 +160,7 @@ option{
 }
 .axes{
     position: relative;
-    animation: axes 2s infinite linear;
+    animation: axes 1s infinite linear;
    
    
 }
